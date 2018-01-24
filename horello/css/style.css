@@ -81,11 +81,12 @@ a {
 }
 
 .board {
+  display: flex;
   overflow-x: auto;
   overflow-y: hidden;
   height: calc(100% - 40px);
   padding-bottom: 1em;
-  display: flex;
+
   /** PART 2 CSS here */
 }
 
@@ -147,19 +148,34 @@ a {
 .list-cards {
   min-height: 0;
 
-  /** PART 3 CSS here */
 }
 
 .card {
-  /** PART 3 CSS here */
+  margin: 0 0 .5em 0;
+  border-radius: 3px;
+  background: white;
+  position: relative;
 }
 
 .card-body {
-  /** PART 3 CSS here */
+  display: block;
+  padding: .5em .5em .2em .5em;
+  font-family: Cabin, Arial, default sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  position: relative;
+  transition: 0.5s all;
 }
 
 .card-more {
-  /** PART 3 CSS here */
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
 }
 
 /** PART 4 CSS here: add card form */
+.add-card-form{
+  padding: 5px;
+  margin-bottom: 0;
+  position: relative;
+}
